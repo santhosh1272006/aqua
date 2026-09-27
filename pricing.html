@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="AquaZen 20-liter water can delivery pricing."
+    >
+
+    <title>Pricing | AquaZen</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <div id="site-header"></div>
+
+    <main>
+
+        <!-- PAGE HERO -->
+        <section class="page-hero">
+
+            <div class="container">
+
+                <span class="eyebrow">
+                    SIMPLE PRICING
+                </span>
+
+                <h1>
+                    Water delivery
+                    <span>pricing.</span>
+                </h1>
+
+                <p>
+                    Our 20-liter drinking water can price
+                    depends on your floor level.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- PRICING -->
+        <section class="section">
+
+            <div class="container">
+
+                <div class="pricing-grid">
+
+                    <!-- GROUND FLOOR -->
+
+                
+<article class="price-card">
+
+    <span class="plan-tag">
+        GROUND FLOOR
+    </span>
+
+    <h3>
+        Ground Floor Delivery
+    </h3>
+
+    <div class="price">
+        ₹30
+        <small>/ can</small>
+    </div>
+
+    <p>
+        Standard delivery for
+        ground floor customers.
+    </p>
+
+    <ul class="check-list">
+        <li>1 × 20L water can</li>
+        <li>Doorstep delivery</li>
+        <li>Easy reorder</li>
+    </ul>
+
+    <!-- QUANTITY -->
+    <div class="cart-quantity">
+        <button
+            type="button"
+            class="quantity-btn minus"
+            onclick="changeQuantity('groundQty', -1)"
+        >
+            −
+        </button>
+
+        <span id="groundQty">0</span>
+
+        <button
+            type="button"
+            class="quantity-btn plus"
+            onclick="changeQuantity('groundQty', 1)"
+        >
+            +
+        </button>
+    </div>
+
+    <button
+        type="button"
+        class="btn btn-outline full"
+        onclick="addToCart('Ground Floor', 30, 'groundQty')"
+    >
+        Add to Cart
+    </button>
+
+</article>
+
+
+<!-- FIRST FLOOR -->
+<article class="price-card featured">
+
+    <span class="popular">
+        POPULAR
+    </span>
+
+    <span class="plan-tag">
+        FIRST FLOOR
+    </span>
+
+    <h3>
+        First Floor Delivery
+    </h3>
+
+    <div class="price">
+        ₹35
+        <small>/ can</small>
+    </div>
+
+    <p>
+        Delivery service for
+        first floor customers.
+    </p>
+
+    <ul class="check-list">
+        <li>1 × 20L water can</li>
+        <li>First floor delivery</li>
+        <li>Easy reorder</li>
+    </ul>
+
+    <!-- QUANTITY -->
+    <div class="cart-quantity">
+        <button
+            type="button"
+            class="quantity-btn minus"
+            onclick="changeQuantity('firstQty', -1)"
+        >
+            −
+        </button>
+
+        <span id="firstQty">0</span>
+
+        <button
+            type="button"
+            class="quantity-btn plus"
+            onclick="changeQuantity('firstQty', 1)"
+        >
+            +
+        </button>
+    </div>
+
+    <button
+        type="button"
+        class="btn btn-primary full"
+        onclick="addToCart('First Floor', 35, 'firstQty')"
+    >
+        Add to Cart
+    </button>
+
+</article>
+
+
+<!-- SECOND FLOOR -->
+<article class="price-card">
+
+    <span class="plan-tag">
+        SECOND FLOOR
+    </span>
+
+    <h3>
+        Second Floor Delivery
+    </h3>
+
+    <div class="price">
+        ₹40
+        <small>/ can</small>
+    </div>
+
+    <p>
+        Delivery service for
+        second floor customers.
+    </p>
+
+    <ul class="check-list">
+        <li>1 × 20L water can</li>
+        <li>Second floor delivery</li>
+        <li>Easy reorder</li>
+    </ul>
+
+    <!-- QUANTITY -->
+    <div class="cart-quantity">
+        <button
+            type="button"
+            class="quantity-btn minus"
+            onclick="changeQuantity('secondQty', -1)"
+        >
+            −
+        </button>
+
+        <span id="secondQty">0</span>
+
+        <button
+            type="button"
+            class="quantity-btn plus"
+            onclick="changeQuantity('secondQty', 1)"
+        >
+            +
+        </button>
+    </div>
+
+    <button
+        type="button"
+        class="btn btn-outline full"
+        onclick="addToCart('Second Floor', 40, 'secondQty')"
+    >
+        Add to Cart
+    </button>
+
+</article>
+
+
+                     
+
+                <p class="pricing-note">
+                    *Additional charges may apply for
+                    floors above the second floor.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ORDER SECTION -->
+        <section
+            id="order"
+            class="section soft-section"
+        >
+
+            <div class="container form-layout">
+
+                <div>
+
+                    <span class="eyebrow">
+                        PLACE AN ORDER
+                    </span>
+
+                    <h2>
+                        Request your
+                        <span>water delivery.</span>
+                    </h2>
+
+                    <p>
+                        Select the number of cans and
+                        your floor level to calculate
+                        the delivery price.
+                    </p>
+
+                </div>
+
+
+                <!-- ORDER FORM -->
+                <form
+                    class="form-card"
+                    id="orderForm"
+                >
+
+                    <!-- NAME -->
+                    <label>
+                        Full Name
+
+                        <input
+                            required
+                            type="text"
+                            name="name"
+                            placeholder="Your name"
+                        >
+                    </label>
+
+
+                    <!-- PHONE -->
+                    <label>
+                        Phone Number
+
+                        <input
+                            required
+                            type="tel"
+                            name="phone"
+                            placeholder="+91 98765 43210"
+                        >
+                    </label>
+
+
+                    <!-- QUANTITY -->
+                    <label>
+                        Number of 20L Cans
+
+                        <select
+                            name="quantity"
+                            id="quantitySelect"
+                        >
+                            <option value="1">
+                                1 Can
+                            </option>
+
+                            <option value="2">
+                                2 Cans
+                            </option>
+
+                            <option value="3">
+                                3 Cans
+                            </option>
+
+                            <option value="4">
+                                4 Cans
+                            </option>
+
+                            <option value="5">
+                                5 Cans
+                            </option>
+                        </select>
+                    </label>
+
+
+                    <!-- FLOOR -->
+                    <label>
+                        Floor Level
+
+                        <select
+                            name="floor"
+                            id="floorSelect"
+                        >
+                            <option value="30">
+                                Ground Floor — ₹30 / can
+                            </option>
+
+                            <option value="35">
+                                First Floor — ₹35 / can
+                            </option>
+
+                            <option value="40">
+                                Second Floor — ₹40 / can
+                            </option>
+                        </select>
+                    </label>
+
+
+                    <!-- AREA -->
+                    <label>
+                        Delivery Area
+
+                        <input
+                            required
+                            type="text"
+                            name="area"
+                            placeholder="Area / locality"
+                        >
+                    </label>
+
+
+                    <!-- TOTAL -->
+                    <div class="order-total">
+
+                        <span>
+                            Total Price
+                        </span>
+
+                        <strong id="totalPrice">
+                            ₹30
+                        </strong>
+
+                    </div>
+
+
+                    <!-- BUTTON -->
+                    <button
+                        class="btn btn-primary full"
+                        type="submit"
+                    >
+                        Place Order
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <div id="site-footer"></div>
+
+
+    <script src="script.js"></script>
+
+
+    <!-- ORDER JS -->
+    <script>
+
+        /* =========================
+           PRICE CALCULATION
+        ========================= */
+
+        const quantitySelect =
+            document.getElementById("quantitySelect");
+
+        const floorSelect =
+            document.getElementById("floorSelect");
+
+        const totalPrice =
+            document.getElementById("totalPrice");
+
+
+        function calculatePrice() {
+
+            const quantity =
+                Number(quantitySelect.value);
+
+            const price =
+                Number(floorSelect.value);
+
+            const total =
+                quantity * price;
+
+            totalPrice.textContent =
+                "₹" + total;
+        }
+
+
+        quantitySelect.addEventListener(
+            "change",
+            calculatePrice
+        );
+
+
+        floorSelect.addEventListener(
+            "change",
+            calculatePrice
+        );
+
+
+        calculatePrice();
+
+
+
+        /* =========================
+           LOGIN CHECK
+        ========================= */
+
+        const loggedIn =
+            localStorage.getItem("aquaZenLoggedIn");
+
+
+        const orderSection =
+            document.getElementById("order");
+
+
+        if (loggedIn !== "true") {
+
+            orderSection.innerHTML = `
+
+                <div class="container">
+
+                    <div class="form-card login-required">
+
+                        <span class="eyebrow">
+                            LOGIN REQUIRED
+                        </span>
+
+                        <h2>
+                            Login to place your
+                            <span>water order.</span>
+                        </h2>
+
+                        <p>
+                            Please login to your AquaZen
+                            account before placing an order.
+                        </p>
+
+                        <a
+                            href="login.html"
+                            class="btn btn-primary"
+                        >
+                            Login to Order
+                        </a>
+
+                        <a
+                            href="register.html"
+                            class="btn btn-outline"
+                        >
+                            Create Account
+                        </a>
+
+                    </div>
+
+                </div>
+
+            `;
+        }
+
+
+
+        /* =========================
+           ORDER BUTTON LOGIN
+        ========================= */
+
+        document
+            .querySelectorAll(".order-button")
+            .forEach(button => {
+
+                button.addEventListener(
+                    "click",
+                    function(event) {
+
+                        const loggedIn =
+                            localStorage.getItem(
+                                "aquaZenLoggedIn"
+                            );
+
+                        if (loggedIn !== "true") {
+
+                            event.preventDefault();
+
+                            window.location.href =
+                                "login.html";
+                        }
+
+                    }
+                );
+
+            });
+
+
+
+        /* =========================
+           PLACE ORDER
+        ========================= */
+
+        const orderForm =
+            document.getElementById("orderForm");
+
+
+        if (orderForm) {
+
+            orderForm.addEventListener(
+                "submit",
+                function(event) {
+
+                    event.preventDefault();
+
+
+                    const loggedIn =
+                        localStorage.getItem(
+                            "aquaZenLoggedIn"
+                        );
+
+
+                    if (loggedIn !== "true") {
+
+                        window.location.href =
+                            "login.html";
+
+                        return;
+                    }
+
+
+                    /* CUSTOMER */
+
+                    const name =
+                        orderForm
+                            .querySelector(
+                                '[name="name"]'
+                            )
+                            .value;
+
+
+                    /* QUANTITY */
+
+                    const quantity =
+                        orderForm
+                            .querySelector(
+                                '[name="quantity"]'
+                            )
+                            .value;
+
+
+                    /* FLOOR */
+
+                    const floorSelect =
+                        orderForm
+                            .querySelector(
+                                '[name="floor"]'
+                            );
+
+
+                    const floorText =
+                        floorSelect
+                            .options[
+                                floorSelect.selectedIndex
+                            ]
+                            .text
+                            .split("—")[0]
+                            .trim();
+
+
+                    /* TOTAL */
+
+                    const total =
+                        document
+                            .getElementById(
+                                "totalPrice"
+                            )
+                            .textContent;
+
+
+                    /* ORDER ID */
+
+                    const orderId =
+                        "AZ" +
+                        Math.floor(
+                            100000 +
+                            Math.random() * 900000
+                        );
+
+
+                    /* SUCCESS SCREEN */
+
+                    orderSection.innerHTML = `
+
+                        <div class="container">
+
+                            <div class="order-success">
+
+                                <div class="success-drop">
+                                    💧
+                                </div>
+
+
+                                <div class="success-status">
+                                    ✓ Order Placed Successfully
+                                </div>
+
+
+                                <h2>
+                                    Pure Water.
+                                    <span>
+                                        Smooth Delivery.
+                                    </span>
+                                </h2>
+
+
+                                <p class="success-tagline">
+
+                                    Thank you,
+                                    <strong>${name}</strong>!
+
+                                    Your AquaZen order
+                                    is confirmed.
+
+                                    We’ll make sure your
+                                    water reaches your
+                                    doorstep fresh and
+                                    on time.
+
+                                </p>
+
+
+                                <div class="success-details">
+
+                                    <div class="success-detail">
+
+                                        <small>
+                                            Order ID
+                                        </small>
+
+                                        <strong>
+                                            ${orderId}
+                                        </strong>
+
+                                    </div>
+
+
+                                    <div class="success-detail">
+
+                                        <small>
+                                            Quantity
+                                        </small>
+
+                                        <strong>
+                                            ${quantity} × 20L
+                                        </strong>
+
+                                    </div>
+
+
+                                    <div class="success-detail">
+
+                                        <small>
+                                            Floor
+                                        </small>
+
+                                        <strong>
+                                            ${floorText}
+                                        </strong>
+
+                                    </div>
+
+
+                                    <div class="success-detail">
+
+                                        <small>
+                                            Total
+                                        </small>
+
+                                        <strong>
+                                            ${total}
+                                        </strong>
+
+                                    </div>
+
+                                </div>
+
+
+                                <p class="success-message">
+
+                                    Stay hydrated.
+                                    Stay refreshed. 💧
+
+                                    <br>
+
+                                    <strong>
+                                        See you at your doorstep!
+                                    </strong>
+
+                                </p>
+
+
+                                <a
+                                    href="index.html"
+                                    class="btn btn-primary"
+                                >
+                                    Back to Home
+                                </a>
+
+
+                                <a
+                                    href="pricing.html"
+                                    class="btn btn-outline"
+                                >
+                                    Place Another Order
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    `;
+
+
+                    window.scrollTo({
+
+                        top:
+                            orderSection.offsetTop - 80,
+
+                        behavior:
+                            "smooth"
+
+                    });
+
+                }
+            );
+
+        }
+
+    </script>
+
+</body>
+
+</html>

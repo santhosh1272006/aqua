@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="AquaZen 20-liter water can delivery areas."
+    >
+
+    <title>Delivery Areas | AquaZen</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <!-- HEADER -->
+
+    <div id="site-header"></div>
+
+
+    <main>
+
+
+        <!-- =========================
+             PAGE HERO
+        ========================== -->
+
+        <section class="page-hero">
+
+            <div class="container">
+
+                <span class="eyebrow">
+                    DELIVERY AREAS
+                </span>
+
+                <h1>
+                    Water delivered across
+                    <span>your neighbourhood.</span>
+                </h1>
+
+                <p>
+                    Select your area to view the delivery
+                    location on the map.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             DELIVERY AREA SECTION
+        ========================== -->
+
+        <section class="section">
+
+            <div class="container">
+
+
+                <!-- HEADING -->
+
+                <div class="area-heading">
+
+                    <span class="eyebrow">
+                        CURRENT SERVICE
+                    </span>
+
+                    <h2>
+                        Find your
+                        <span>delivery area.</span>
+                    </h2>
+
+                    <p>
+                        AquaZen provides 20-liter drinking
+                        water can delivery in the following
+                        areas.
+                    </p>
+
+                </div>
+
+
+
+                <!-- MAP + AREAS -->
+
+                <div class="delivery-area-layout">
+
+
+                    <!-- =====================
+                         LEFT SIDE - MAP
+                    ====================== -->
+
+                    <div class="delivery-map">
+
+                        <iframe
+                            id="areaMap"
+                            src="https://www.google.com/maps?q=2%2F824%2C%20Old%20Ganesh%20Nagar%206th%20Street%2C%20Vettuvankeni%2C%20Chennai%20600%20115&output=embed"
+                            width="100%"
+                            height="500"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+
+                    </div>
+
+
+
+                    <!-- =====================
+                         RIGHT SIDE - AREAS
+                    ====================== -->
+
+                    <div class="area-selection">
+
+
+                        <!-- GANESH NAGAR -->
+
+                        <button
+                            type="button"
+                            class="area-card"
+                            onclick="changeArea(
+                                '2/824 Old Ganesh Nagar 6th Street Vettuvankeni Chennai 600115',
+                                this
+                            )"
+                        >
+
+                            <div class="area-icon">
+                                💧
+                            </div>
+
+                            <div class="area-info">
+
+                                <strong>
+                                    Ganesh Nagar
+                                </strong>
+
+                                <span>
+                                    Water delivery available
+                                </span>
+
+                            </div>
+
+                            <div class="area-arrow">
+                                →
+                            </div>
+
+                        </button>
+
+
+
+                        <!-- RAJENDRA NAGAR -->
+
+                        <button
+                            type="button"
+                            class="area-card"
+                            onclick="changeArea(
+                                'Rajendra Nagar Chennai',
+                                this
+                            )"
+                        >
+
+                            <div class="area-icon">
+                                💧
+                            </div>
+
+                            <div class="area-info">
+
+                                <strong>
+                                    Rajendra Nagar
+                                </strong>
+
+                                <span>
+                                    Water delivery available
+                                </span>
+
+                            </div>
+
+                            <div class="area-arrow">
+                                →
+                            </div>
+
+                        </button>
+
+
+
+                        <!-- THIRUVALLUR NAGAR -->
+
+                        <button
+                            type="button"
+                            class="area-card"
+                            onclick="changeArea(
+                                'Thiruvallur Nagar Chennai',
+                                this
+                            )"
+                        >
+
+                            <div class="area-icon">
+                                💧
+                            </div>
+
+                            <div class="area-info">
+
+                                <strong>
+                                    Thiruvallur Nagar
+                                </strong>
+
+                                <span>
+                                    Water delivery available
+                                </span>
+
+                            </div>
+
+                            <div class="area-arrow">
+                                →
+                            </div>
+
+                        </button>
+
+
+
+                        <!-- BHARATHIYAR NAGAR -->
+
+                        <button
+                            type="button"
+                            class="area-card"
+                            onclick="changeArea(
+                                'Bharathiyar Nagar Chennai',
+                                this
+                            )"
+                        >
+
+                            <div class="area-icon">
+                                💧
+                            </div>
+
+                            <div class="area-info">
+
+                                <strong>
+                                    Bharathiyar Nagar
+                                </strong>
+
+                                <span>
+                                    Water delivery available
+                                </span>
+
+                            </div>
+
+                            <div class="area-arrow">
+                                →
+                            </div>
+
+                        </button>
+
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =========================
+                     BOTTOM INFORMATION
+                ========================== -->
+
+                <div class="availability area-availability">
+
+                    <span>
+                        ●
+                    </span>
+
+                    <div>
+
+                        <b>
+                            Your area is not listed?
+                        </b>
+
+                        <small>
+                            Contact AquaZen and send us your
+                            locality. We will check delivery
+                            availability for you.
+                        </small>
+
+                    </div>
+
+                    <a
+                        class="btn btn-primary"
+                        href="contact.html"
+                    >
+                        Check My Area
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+
+    <div id="site-footer"></div>
+
+
+
+    <!-- MAIN SCRIPT -->
+
+    <script src="script.js"></script>
+
+
+
+    <!-- =========================
+         DELIVERY AREA SCRIPT
+    ========================== -->
+
+    <script>
+
+        function changeArea(area, selectedCard) {
+
+
+            /* =====================
+               CHANGE GOOGLE MAP
+            ===================== */
+
+            const map =
+                document.getElementById("areaMap");
+
+
+            map.src =
+                "https://www.google.com/maps?q="
+                + encodeURIComponent(area)
+                + "&output=embed";
+
+
+
+            /* =====================
+               REMOVE ACTIVE
+               FROM ALL CARDS
+            ===================== */
+
+            document
+                .querySelectorAll(".area-card")
+                .forEach(card => {
+
+                    card.classList.remove("active");
+
+                });
+
+
+
+            /* =====================
+               ADD ACTIVE ONLY
+               TO CLICKED CARD
+            ===================== */
+
+            selectedCard.classList.add("active");
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>

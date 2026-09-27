@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="AquaZen shopping cart for 20-liter drinking water can delivery."
+    >
+
+    <title>Cart | AquaZen</title>
+
+    <!-- FONT AWESOME -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    
+    <!-- MAIN CSS -->
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    <!-- CART CSS -->
+    <link
+        rel="stylesheet"
+        href="cart.css"
+    >
+
+</head>
+
+
+<body>
+
+    <!-- HEADER -->
+    <div id="site-header"></div>
+
+
+    <main>
+
+        <!-- =================================
+             CART HERO
+        ================================== -->
+
+        <section class="cart-page-hero">
+
+            <div class="cart-page-container">
+
+                <span class="cart-eyebrow">
+                    AQUAZEN SHOPPING CART
+                </span>
+
+                <h1>
+                    Your water
+                    <span>cart.</span>
+                </h1>
+
+                <p>
+                    Review your selected 20-liter
+                    water cans before checkout.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================
+             CART CONTENT
+        ================================== -->
+
+        <section class="cart-section">
+
+            <div class="cart-page-container">
+
+                <div class="cart-layout">
+
+                    <!-- CART ITEMS -->
+                    <div class="cart-items-box">
+
+                        <div class="cart-box-header">
+
+                            <div>
+                                <span class="cart-small-title">
+                                    YOUR ORDER
+                                </span>
+
+                                <h2>
+                                    Selected cans
+                                </h2>
+                            </div>
+
+                            <span
+                                class="cart-item-badge"
+                                id="cartItemBadge"
+                            >
+                                0 items
+                            </span>
+
+                        </div>
+
+
+                        <div
+                            id="cartItems"
+                            class="cart-page-items"
+                        >
+                            <!-- CART ITEMS WILL LOAD HERE -->
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- CART SUMMARY -->
+                    <aside class="cart-summary">
+
+                        <div class="summary-top">
+
+                            <span class="cart-small-title">
+                                ORDER SUMMARY
+                            </span>
+
+                            <h2>
+                                Cart total
+                            </h2>
+
+                        </div>
+
+
+                        <div class="summary-row">
+
+                            <span>
+                                Total Cans
+                            </span>
+
+                            <strong id="cartTotalCans">
+                                0
+                            </strong>
+
+                        </div>
+
+
+                        <div class="summary-row">
+
+                            <span>
+                                Delivery Items
+                            </span>
+
+                            <strong>
+                                20L Cans
+                            </strong>
+
+                        </div>
+
+
+                        <div class="summary-divider"></div>
+
+
+                        <div class="summary-total">
+
+                            <span>
+                                Total Amount
+                            </span>
+
+                            <strong id="cartTotalPrice">
+                                ₹0
+                            </strong>
+
+                        </div>
+
+
+                        <button
+                            type="button"
+                            class="cart-checkout-btn"
+                            id="cartCheckoutBtn"
+                        >
+                            Proceed to Checkout
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+
+                        <a
+                            href="pricing.html"
+                            class="continue-shopping-btn"
+                        >
+                            <i class="fa-solid fa-arrow-left"></i>
+                            Continue Shopping
+                        </a>
+
+
+                        <p class="cart-note">
+                            Final delivery details will be
+                            confirmed during checkout.
+                        </p>
+
+                    </aside>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================
+             EMPTY CART
+        ================================== -->
+
+        <section
+            id="emptyCart"
+            class="empty-cart-section"
+        >
+
+            <div class="empty-cart-box">
+
+                <div class="empty-cart-icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+
+                <span class="cart-eyebrow">
+                    CART EMPTY
+                </span>
+
+                <h2>
+                    No water cans
+                    <span>selected yet.</span>
+                </h2>
+
+                <p>
+                    Choose your floor delivery plan
+                    and add your 20L cans to the cart.
+                </p>
+
+                <a
+                    href="pricing.html"
+                    class="empty-cart-btn"
+                >
+                    View Pricing
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =================================
+     AQUAZEN ORDER SUCCESS
+================================= -->
+
+<section
+    id="aquaZenThankYou"
+    class="aqua-thank-you"
+>
+
+    <div class="aqua-success-card">
+
+        <!-- ANIMATED WATER DROP -->
+        <div class="aqua-success-drop">
+            💧
+        </div>
+
+
+        <!-- STATUS -->
+        <div class="aqua-success-status">
+            <i class="fa-solid fa-circle-check"></i>
+            ORDER CONFIRMED
+        </div>
+
+
+        <span class="cart-eyebrow">
+            THANK YOU FOR CHOOSING AQUAZEN
+        </span>
+
+
+        <h2>
+            Pure Water.
+            <span>Beautifully Delivered.</span>
+        </h2>
+
+
+        <p class="aqua-success-main">
+
+            Your AquaZen order has been successfully
+            placed. We are getting your fresh 20L water
+            cans ready for delivery.
+
+        </p>
+
+
+        <!-- ORDER DETAILS -->
+
+        <div class="aqua-success-details">
+
+            <div class="aqua-success-detail">
+
+                <small>
+                    ORDER ID
+                </small>
+
+                <strong id="successOrderId">
+                    AZ000000
+                </strong>
+
+            </div>
+
+
+            <div class="aqua-success-detail">
+
+                <small>
+                    TOTAL CANS
+                </small>
+
+                <strong id="successCanCount">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div class="aqua-success-detail">
+
+                <small>
+                    TOTAL AMOUNT
+                </small>
+
+                <strong id="successTotal">
+                    ₹0
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <!-- UNIQUE MESSAGE -->
+
+        <div class="aqua-success-message">
+
+            <p>
+                🌊 From our source to your doorstep,
+                every can is prepared for a smooth,
+                refreshing experience.
+            </p>
+
+            <strong>
+                Stay hydrated. Stay refreshed. 💧
+            </strong>
+
+            <span>
+                See you at your doorstep!
+            </span>
+
+        </div>
+
+
+        <!-- ACTIONS -->
+
+        <div class="aqua-success-actions">
+
+            <a
+                href="index.html"
+                class="btn btn-primary"
+            >
+                Back to Home
+            </a>
+
+
+            <a
+                href="pricing.html"
+                class="btn btn-outline"
+            >
+                Order More Water
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- FOOTER -->
+    <div id="site-footer"></div>
+
+
+    <!-- EXISTING HEADER / FOOTER / LOGIN JS -->
+    <script src="script.js"></script>
+
+    <!-- CART PAGE JS -->
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
